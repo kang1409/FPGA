@@ -1,0 +1,30 @@
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_led_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib xil_defaultlib.tb_led xil_defaultlib.glbl 
+# Start time: 17:03:00 on Sep 01,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_led(fast)
+# Loading work.led(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+run
+# Causality operation skipped due to absence of debug database file
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/progect/led/doc/wave.do
+# End time: 17:24:12 on Sep 01,2023, Elapsed time: 0:21:12
+# Errors: 0, Warnings: 1

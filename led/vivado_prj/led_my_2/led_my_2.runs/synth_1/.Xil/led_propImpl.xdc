@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:F:/progect/led/vivado_prj/led_my_2/led_my_2.srcs/constrs_1/new/uart_leb.xdc rfile:../../../led_my_2.srcs/constrs_1/new/uart_leb.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R15 [get_ports key_in]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN K3 [get_ports led_out]

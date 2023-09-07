@@ -1,0 +1,86 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/progect/led/vivado_prj/led_my_2/led_my_2.sim/sim_1/behav/modelsim
+T_opt
+!s110 1693555937
+Vl`ImTbP?lR4IM6[7OdT7_1
+04 6 4 work tb_led fast 0
+04 4 4 work glbl fast 0
+=1-145afc1ba4d9-64f19cdf-2e7-3d04
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+R0
+vglbl
+!s110 1693558976
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+IAl?5;D^:bf?I5A^M>WzmU1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1573089660
+8glbl.v
+Fglbl.v
+L0 6
+Z3 OL;L;10.5;63
+r1
+!s85 0
+31
+!s108 1693558976.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+Z4 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vled
+!s10a 1693389685
+Z5 !s110 1693555930
+!i10b 1
+!s100 ^Ii;<>]=N>I?H[gf^H]De3
+IJ7Q]Fi5QECaQ;<_V^3:642
+R2
+R0
+w1693389685
+8../../../../../../rtl/led.v
+F../../../../../../rtl/led.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z6 !s108 1693555930.000000
+Z7 !s107 ../../../../../../rtl/tb_leb.v|../../../../../../rtl/led.v|
+Z8 !s90 -64|-incr|-work|xil_defaultlib|../../../../../../rtl/led.v|../../../../../../rtl/tb_leb.v|
+!i113 0
+R4
+R1
+vtb_led
+!s10a 1693555464
+R5
+!i10b 1
+!s100 c]AU2DJ0>m<f:UYiVKAH`2
+I[;0nBHh90c4L`kl^Qo1UW1
+R2
+R0
+w1693555464
+8../../../../../../rtl/tb_leb.v
+F../../../../../../rtl/tb_leb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R4
+R1
