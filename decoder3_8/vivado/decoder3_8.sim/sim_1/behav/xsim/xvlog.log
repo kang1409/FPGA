@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/progect/decoder3_8/rtl/decoder3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/progect/decoder3_8/rtl/tb_decoder3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_decoder3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/progect/decoder3_8/vivado/decoder3_8.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

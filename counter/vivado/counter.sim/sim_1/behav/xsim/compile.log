@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/counter/rtl/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+WARNING: [VRFC 10-986] literal value truncated to fit in 25 bits [F:/project/counter/rtl/counter.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/counter/sim/tb_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_counter

@@ -1,0 +1,6 @@
+set_property IOSTANDARD LVCMOS33 [get_ports led_out]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_clk]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_rst_n]
+set_property PACKAGE_PIN K2 [get_ports led_out]
+set_property PACKAGE_PIN P17 [get_ports sys_clk]
+set_property PACKAGE_PIN U4 [get_ports sys_rst_n]

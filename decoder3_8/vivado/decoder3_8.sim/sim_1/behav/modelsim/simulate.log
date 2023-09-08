@@ -1,0 +1,112 @@
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_decoder3_8_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib xil_defaultlib.tb_decoder3_8 xil_defaultlib.glbl 
+# Start time: 17:43:02 on Sep 03,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_decoder3_8(fast)
+# Loading work.decoder3_8(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# @time    0ns : in1=0, in2=0, in3=0, out=00000001
+# @time   10ns : in1=0, in2=1, in3=1, out=11101000
+# @time   20ns : in1=1, in2=1, in3=1, out=10000000
+# @time   30ns : in1=1, in2=0, in3=1, out=10100000
+# @time   60ns : in1=0, in2=1, in3=0, out=01100100
+# @time   70ns : in1=1, in2=1, in3=0, out=01000000
+# @time   80ns : in1=1, in2=0, in3=0, out=00010000
+# @time   90ns : in1=0, in2=1, in3=0, out=01100100
+# @time  100ns : in1=1, in2=1, in3=1, out=10000000
+# @time  110ns : in1=1, in2=0, in3=0, out=00010000
+# @time  120ns : in1=0, in2=0, in3=1, out=00001010
+# @time  130ns : in1=0, in2=1, in3=1, out=11101000
+# @time  140ns : in1=1, in2=1, in3=1, out=10000000
+# @time  150ns : in1=0, in2=0, in3=1, out=00001010
+# @time  160ns : in1=1, in2=1, in3=0, out=01000000
+# @time  170ns : in1=0, in2=0, in3=0, out=00000001
+# @time  180ns : in1=0, in2=1, in3=0, out=01100100
+# @time  190ns : in1=0, in2=1, in3=1, out=11101000
+# @time  200ns : in1=0, in2=0, in3=0, out=00000001
+# @time  210ns : in1=0, in2=0, in3=1, out=00001010
+# @time  220ns : in1=1, in2=1, in3=1, out=10000000
+# @time  230ns : in1=1, in2=0, in3=0, out=00010000
+# @time  240ns : in1=1, in2=1, in3=1, out=10000000
+# @time  250ns : in1=0, in2=0, in3=1, out=00001010
+# @time  260ns : in1=1, in2=0, in3=1, out=10100000
+# @time  280ns : in1=1, in2=1, in3=0, out=01000000
+# @time  300ns : in1=0, in2=0, in3=0, out=00000001
+# @time  310ns : in1=1, in2=1, in3=0, out=01000000
+# @time  320ns : in1=0, in2=1, in3=1, out=11101000
+# @time  330ns : in1=1, in2=1, in3=1, out=10000000
+# @time  340ns : in1=0, in2=1, in3=1, out=11101000
+# @time  350ns : in1=1, in2=0, in3=0, out=00010000
+# @time  360ns : in1=0, in2=0, in3=0, out=00000001
+# @time  370ns : in1=0, in2=0, in3=1, out=00001010
+# @time  380ns : in1=1, in2=1, in3=1, out=10000000
+# @time  390ns : in1=1, in2=0, in3=1, out=10100000
+# @time  400ns : in1=1, in2=0, in3=0, out=00010000
+# @time  410ns : in1=1, in2=1, in3=0, out=01000000
+# @time  420ns : in1=1, in2=1, in3=1, out=10000000
+# @time  430ns : in1=1, in2=0, in3=0, out=00010000
+# @time  440ns : in1=0, in2=1, in3=0, out=01100100
+# @time  450ns : in1=0, in2=0, in3=1, out=00001010
+# @time  460ns : in1=1, in2=0, in3=0, out=00010000
+# @time  480ns : in1=0, in2=1, in3=0, out=01100100
+# @time  500ns : in1=1, in2=1, in3=1, out=10000000
+# @time  510ns : in1=1, in2=1, in3=0, out=01000000
+# @time  520ns : in1=0, in2=0, in3=1, out=00001010
+# @time  540ns : in1=1, in2=0, in3=0, out=00010000
+# @time  550ns : in1=0, in2=1, in3=1, out=11101000
+# @time  560ns : in1=0, in2=0, in3=0, out=00000001
+# @time  570ns : in1=1, in2=1, in3=0, out=01000000
+# @time  580ns : in1=0, in2=0, in3=1, out=00001010
+# @time  600ns : in1=0, in2=0, in3=0, out=00000001
+# @time  610ns : in1=1, in2=0, in3=1, out=10100000
+# @time  620ns : in1=1, in2=0, in3=0, out=00010000
+# @time  630ns : in1=0, in2=0, in3=1, out=00001010
+# @time  640ns : in1=0, in2=0, in3=0, out=00000001
+# @time  650ns : in1=0, in2=1, in3=1, out=11101000
+# @time  660ns : in1=1, in2=0, in3=1, out=10100000
+# @time  670ns : in1=1, in2=1, in3=0, out=01000000
+# @time  680ns : in1=0, in2=1, in3=1, out=11101000
+# @time  690ns : in1=1, in2=1, in3=1, out=10000000
+# @time  700ns : in1=0, in2=1, in3=1, out=11101000
+# @time  710ns : in1=0, in2=0, in3=0, out=00000001
+# @time  720ns : in1=0, in2=1, in3=1, out=11101000
+# @time  730ns : in1=0, in2=0, in3=1, out=00001010
+# @time  770ns : in1=1, in2=1, in3=0, out=01000000
+# @time  780ns : in1=0, in2=0, in3=1, out=00001010
+# @time  800ns : in1=0, in2=0, in3=0, out=00000001
+# @time  810ns : in1=0, in2=1, in3=0, out=01100100
+# @time  820ns : in1=0, in2=0, in3=1, out=00001010
+# @time  830ns : in1=1, in2=0, in3=1, out=10100000
+# @time  840ns : in1=1, in2=1, in3=1, out=10000000
+# @time  850ns : in1=0, in2=1, in3=1, out=11101000
+# @time  860ns : in1=1, in2=0, in3=0, out=00010000
+# @time  880ns : in1=1, in2=1, in3=0, out=01000000
+# @time  890ns : in1=0, in2=1, in3=0, out=01100100
+# @time  910ns : in1=1, in2=1, in3=0, out=01000000
+# @time  920ns : in1=1, in2=0, in3=1, out=10100000
+# @time  930ns : in1=0, in2=0, in3=1, out=00001010
+# @time  940ns : in1=0, in2=0, in3=0, out=00000001
+# @time  950ns : in1=1, in2=1, in3=1, out=10000000
+# @time  960ns : in1=1, in2=1, in3=0, out=01000000
+# @time  970ns : in1=1, in2=1, in3=1, out=10000000
+# @time  980ns : in1=0, in2=0, in3=0, out=00000001
+# End time: 18:16:59 on Sep 03,2023, Elapsed time: 0:33:57
+# Errors: 0, Warnings: 0

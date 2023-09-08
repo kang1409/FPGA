@@ -1,0 +1,24 @@
+# do {tb_decoder3_8_compile.do}
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:42:58 on Sep 03,2023
+# vlog -64 -incr -work xil_defaultlib ../../../../../rtl/decoder3_8.v ../../../../../rtl/tb_decoder3_8.v 
+# -- Compiling module decoder3_8
+# -- Compiling module tb_decoder3_8
+# 
+# Top level modules:
+# 	tb_decoder3_8
+# End time: 17:42:58 on Sep 03,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:42:58 on Sep 03,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 17:42:58 on Sep 03,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
