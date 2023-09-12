@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/water_led/rtl/water_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module water_led
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'led_out' is not permitted [F:/project/water_led/rtl/water_led.v:65]
+ERROR: [VRFC 10-2865] module 'water_led' ignored due to previous errors [F:/project/water_led/rtl/water_led.v:23]

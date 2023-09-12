@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Sep  3 21:46:08 2023
+# Process ID: 7972
+# Current directory: F:/progect/harf_adder/vivado/harf_adder.runs/impl_1
+# Command line: vivado.exe -log harf_adder.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source harf_adder.tcl -notrace
+# Log file: F:/progect/harf_adder/vivado/harf_adder.runs/impl_1/harf_adder.vdi
+# Journal file: F:/progect/harf_adder/vivado/harf_adder.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source harf_adder.tcl -notrace

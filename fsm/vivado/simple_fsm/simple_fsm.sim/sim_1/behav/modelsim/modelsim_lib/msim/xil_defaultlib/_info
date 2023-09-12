@@ -1,0 +1,85 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/project/fsm/vivado/simple_fsm/simple_fsm.sim/sim_1/behav/modelsim
+T_opt
+!s110 1694077809
+VYhH1leWj568ig[IW^KZ;11
+04 13 4 work tb_simple_fsm fast 0
+04 4 4 work glbl fast 0
+=1-145afc1ba4d9-64f9936f-1bb-4530
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+vglbl
+!s110 1694077801
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+IAl?5;D^:bf?I5A^M>WzmU1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1573089660
+8glbl.v
+Fglbl.v
+L0 6
+Z3 OL;L;10.5;63
+r1
+!s85 0
+31
+!s108 1694077801.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+Z4 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vsimple_fsm
+!s10a 1694076248
+Z5 !s110 1694077394
+!i10b 1
+!s100 zC_ZakBz>[CgYYZbBGMNZ1
+IM_^:E?H:TEbkJ8K8YHl6e2
+R2
+R0
+w1694076248
+8../../../../../../rtl/simple_fsm.v
+F../../../../../../rtl/simple_fsm.v
+Z6 L0 23
+R3
+r1
+!s85 0
+31
+Z7 !s108 1694077394.000000
+Z8 !s107 ../../../../../../sim/tb_simple_fsm.v|../../../../../../rtl/simple_fsm.v|
+Z9 !s90 -64|-incr|-work|xil_defaultlib|../../../../../../rtl/simple_fsm.v|../../../../../../sim/tb_simple_fsm.v|
+!i113 0
+R4
+R1
+vtb_simple_fsm
+!s10a 1694077193
+R5
+!i10b 1
+!s100 NEzBL[hi3eLo?9CD=G>eH3
+Iehm0kgH3hmf<Fg^2A8Cb[0
+R2
+R0
+w1694077193
+8../../../../../../sim/tb_simple_fsm.v
+F../../../../../../sim/tb_simple_fsm.v
+R6
+R3
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R4
+R1

@@ -1,0 +1,95 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/progect/harf_adder/vivado/harf_adder.sim/sim_1/behav/modelsim
+T_opt
+!s110 1693747938
+VG3TIJ1lfgLS_@HADzI3`B3
+04 10 4 work harf_adder fast 0
+Z1 04 4 4 work glbl fast 0
+=1-145afc1ba4d9-64f48ae2-12e-2da4
+Z2 o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;10.5;63
+R0
+T_opt1
+!s110 1693748222
+V]^aVUYTH6XVOaHo`NmL`91
+04 13 4 work tb_harf_adder fast 0
+R1
+=1-145afc1ba4d9-64f48bfe-24d-2dd4
+R2
+R3
+n@_opt1
+R4
+vglbl
+Z5 !s110 1693748219
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+IAl?5;D^:bf?I5A^M>WzmU1
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1573089660
+8glbl.v
+Fglbl.v
+L0 6
+Z7 OL;L;10.5;63
+r1
+!s85 0
+31
+Z8 !s108 1693748219.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+Z9 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vharf_adder
+!s10a 1693747738
+!s110 1693747934
+!i10b 1
+!s100 @WKSHQlIjdZhS9FnG1aNl2
+I9;Zf0`Q3SJfM`=F?bPg<31
+R6
+R0
+w1693747738
+8../../../../../rtl/harf_adder.v
+F../../../../../rtl/harf_adder.v
+L0 23
+R7
+r1
+!s85 0
+31
+!s108 1693747934.000000
+!s107 ../../../../../rtl/harf_adder.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../../../rtl/harf_adder.v|
+!i113 0
+R9
+R3
+vtb_harf_adder
+R5
+!i10b 1
+!s100 jYL35m6Q1bVm=2KMUdM1n2
+IP]UBjj?`D^ZXGGCQRjQaa3
+R6
+R0
+w1693748195
+8../../../../harf_adder.srcs/sim_1/imports/rtl/tb_harf_adder.v
+F../../../../harf_adder.srcs/sim_1/imports/rtl/tb_harf_adder.v
+L0 32
+R7
+r1
+!s85 0
+31
+R8
+!s107 ../../../../harf_adder.srcs/sim_1/imports/rtl/tb_harf_adder.v|../../../../../rtl/harf_adder.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../../../rtl/harf_adder.v|../../../../harf_adder.srcs/sim_1/imports/rtl/tb_harf_adder.v|
+!i113 0
+R9
+R3

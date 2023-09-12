@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/fsm/rtl/simplex_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simplex_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/fsm/sim/tb_simplex_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_simplex_fsm

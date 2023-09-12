@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/flip_flop/rtl/flip_flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flip_flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/flip_flop/rtl/flip_flop_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flip_flop_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/flip_flop/sim/tb_flip_flop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_flip_flop
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/flip_flop/vivado/flip_flop.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

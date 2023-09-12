@@ -1,0 +1,8 @@
+set_property PACKAGE_PIN K2 [get_ports cout]
+set_property IOSTANDARD LVCMOS33 [get_ports cout]
+set_property IOSTANDARD LVCMOS33 [get_ports in1]
+set_property IOSTANDARD LVCMOS33 [get_ports in2]
+set_property IOSTANDARD LVCMOS33 [get_ports sum]
+set_property PACKAGE_PIN F6 [get_ports sum]
+set_property PACKAGE_PIN V1 [get_ports in1]
+set_property PACKAGE_PIN R11 [get_ports in2]
