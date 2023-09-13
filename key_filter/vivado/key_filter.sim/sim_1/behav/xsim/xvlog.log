@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/key_filter/rtl/key_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/key_filter/sim/tb_key_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_key_filter

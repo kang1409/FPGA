@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Sep 13 19:17:32 2023
+# Process ID: 7788
+# Current directory: F:/project/key_filter/vivado/key_filter.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source F:/project/key_filter/vivado/key_filter.sim/sim_1/behav/xsim/xsim.dir/tb_key_filter_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/project/key_filter/vivado/key_filter.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: F:/project/key_filter/vivado/key_filter.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source F:/project/key_filter/vivado/key_filter.sim/sim_1/behav/xsim/xsim.dir/tb_key_filter_behav/webtalk/xsim_webtalk.tcl -notrace
