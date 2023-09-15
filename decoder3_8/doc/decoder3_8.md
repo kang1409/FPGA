@@ -14,7 +14,7 @@
 
 #### 模块框图
 
-![](F:\progect\decoder3_8\doc\decoder3_8.png)
+![](F:\project\decoder3_8\doc\decoder3_8.png)
 
 #### 译码器真值表
 
@@ -149,7 +149,6 @@ endmodule
 ## 总结
 
 使用if—else实现3-8译码器，学习{，} 位拼接运算符。
-
 
 
 

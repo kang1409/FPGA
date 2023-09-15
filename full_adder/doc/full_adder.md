@@ -16,11 +16,11 @@
 
 #### 顶层模块
 
-![image-20230904170717233](F:\progect\full_adder\doc\full_adder_1.png)
+![](F:\project\full_adder\doc\full_adder_1.png)
 
 #### 模块整体框图
 
-![image-20230904170827280](F:\progect\full_adder\doc\full_adder_2.png)
+![](F:\project\full_adder\doc\full_adder_2.png)
 
 #### 真值表
 

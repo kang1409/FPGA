@@ -30,7 +30,7 @@ sel 为 0 时选择 in1，sel 为1 时 选择 in2
 
 ### 波形图：
 
-![image-20230901195231857](F:\progect\mux2_1\doc\mux2_1波形.png)
+![](F:\project\mux2_1\doc\mux2_1_1.png)
 
 ### 代码展示：
 
@@ -94,4 +94,4 @@ endmodule
 
 ### 测试波形：
 
-![image-20230901195657295](F:\progect\mux2_1\doc\测试波形.png)
+![](F:\project\mux2_1\doc\mux2_1_2.png)

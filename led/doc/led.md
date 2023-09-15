@@ -16,6 +16,10 @@
 
 ## 实验内容：
 
+### 模块框图
+
+![](F:\project\led\doc\image20230901170102659.png)
+
 ### 实验代码：
 
 ```verilog
@@ -38,7 +42,7 @@ endmodule
 
 ### 波形图：
 
-![image-20230901170102659](F:\progect\led\doc\image-20230901170102659.png)
+![](F:\project\harf_adder\doc\harf_adder_2.png)
 
 ### 编写测试代码：
 
@@ -62,7 +66,7 @@ endmodule
 
 vivdo --> run simulation
 
-![image-20230901170718807](F:\progect\led\doc\image-20230901170718807.png)
+![](F:\project\led\doc\image20230901170718807.png)
 
 ### 生成管脚约束文件
 

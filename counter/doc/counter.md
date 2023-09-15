@@ -6,7 +6,7 @@
 
 ### 模块框图
 
-![image-20230906220130250](F:\project\counter\doc\计数器模块.png)
+![](F:\project\counter\doc\counter.png)
 
 ### 信号描述
 

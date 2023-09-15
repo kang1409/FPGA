@@ -12,7 +12,7 @@
 
 ### 模块框图
 
-![image-20230906222739619](F:\project\counter\doc\流水灯.png)
+![image-20230915211514261](F:\project\water_led\doc\water_led.png)
 
 ### 信号描述
 

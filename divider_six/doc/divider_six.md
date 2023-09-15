@@ -10,7 +10,7 @@
 
 ### 模块框图
 
-![image-20230906221936615](F:\project\divider_six\doc\分频器.png)
+![](F:\project\divider_six\doc\divider_six.png)
 
 ### 代码
 

@@ -14,7 +14,7 @@
 
 ### 模块框图
 
-![image-20230903203409501](F:\progect\harf_adder\doc\harf_adder.png)
+![](F:\project\harf_adder\doc\harf_adder.png)
 
 ### 真值表
 
@@ -27,7 +27,7 @@
 
 ### 波形图
 
-![image-20230903205440907](F:\progect\harf_adder\doc\harf_adder_2.png)
+![](F:\project\harf_adder\doc\harf_adder_2.png)
 
 ### 代码
 

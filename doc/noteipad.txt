@@ -1,6 +1,0 @@
-F:/notepad7.6.6/Notepad++/notepad++.exe [file name] -n[line number]
-
-
-
-
-E:/APP/VSCode/Microsoft VS Code/Code.exe [file name] -n[line number]

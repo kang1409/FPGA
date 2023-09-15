@@ -16,7 +16,7 @@
 
 #### 模块框图
 
-![image-20230905195648728](F:\project\flip_flop\doc\模块框图.png)
+![](F:\project\flip_flop\doc\flip_flop.png)
 
 #### 信号描述
 
@@ -35,13 +35,13 @@ D触发器根据复位方式分为俩种，一种是同步复位，一种是异�
 
 ​	同步复位的D触发器中的同步是指与工作时钟同步。及当时钟上升沿（或下降沿）到来的时候检测复位信号是否有效。
 
-![image-20230905201613286](F:\project\flip_flop\doc\同步复位波形图.png)
+![](F:\project\flip_flop\doc\flip_flop_1.png)
 
 ##### 异步复位设计
 
 异步复位是指D触发器中的异步复位是指与工作时钟不同步，及当按键被按下就执行复位操作。
 
-![image-20230905202542487](F:\project\flip_flop\doc\异步复位波形图.png)
+![](F:\project\flip_flop\doc\flip_flop_2.png)
 
 **时序电路特点：1、对电路中的毛刺现象有很好的屏蔽，2、有延一拍的效果。**
 
@@ -49,7 +49,67 @@ D触发器根据复位方式分为俩种，一种是同步复位，一种是异�
 
 #### 同步复位
 
+```verilog
+`timescale 1ns/1ns
+module flip_flop(
+    input wire sys_clk,
+    input wire sys_rst_n,
+    input wire key_in,
+
+    output reg led_out
+);
+
+always @(posedge sys_clk) begin
+    if (sys_rst_n == 1'b0)
+        led_out <= 1'b0;
+    else
+        led_out <= key_in;    
+end
+
+endmodule
 ```
+
+### 异步复位
+
+```verilog
+`timescale 1ns / 1ns
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2023/09/05 18:56:21
+// Design Name: 
+// Module Name: flip_flop_1
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module flip_flop_1(
+    input wire sys_clk,
+    input wire sys_rst_n,
+    input wire key_in,
+
+    output reg led_out
+    );
+
+    always @(posedge sys_clk or negedge sys_rst_n) begin
+        if (sys_rst_n == 1'b0)
+            led_out <= 1'b0;
+        else
+            led_out <= key_in;
+        
+    end
+endmodule
 
 ```
 
