@@ -66,7 +66,7 @@ module water_led
         if(sys_rst_n == 1'b1)
             cnt <=27'b0;
         else if(cnt == CNT_MAX)
-            cnt <= 17'b0;
+            cnt <= 27'b0;
         else
             cnt <= cnt + 1'b1;
     end
