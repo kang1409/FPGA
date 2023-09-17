@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic

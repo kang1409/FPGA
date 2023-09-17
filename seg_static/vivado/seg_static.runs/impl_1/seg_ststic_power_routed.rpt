@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Thu Sep 14 22:11:41 2023
+| Date             : Sat Sep 16 18:11:09 2023
 | Host             : LAPTOP-03UPN56G running 64-bit major release  (build 9200)
 | Command          : report_power -file seg_ststic_power_routed.rpt -pb seg_ststic_power_summary_routed.pb -rpx seg_ststic_power_routed.rpx
 | Design           : seg_ststic
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.530        |
+| Total On-Chip Power (W)  | 0.542        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.457        |
+| Dynamic (W)              | 0.469        |
 | Device Static (W)        | 0.073        |
 | Effective TJA (C/W)      | 4.8          |
-| Max Ambient (C)          | 82.5         |
-| Junction Temperature (C) | 27.5         |
+| Max Ambient (C)          | 82.4         |
+| Junction Temperature (C) | 27.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.262 |      103 |       --- |             --- |
-|   LUT as Logic |     0.225 |       29 |     20800 |            0.14 |
+| Slice Logic    |     0.250 |      100 |       --- |             --- |
+|   LUT as Logic |     0.213 |       29 |     20800 |            0.14 |
 |   CARRY4       |     0.018 |        7 |      8150 |            0.09 |
-|   Register     |     0.014 |       45 |     41600 |            0.11 |
+|   Register     |     0.014 |       42 |     41600 |            0.10 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.191 |       88 |       --- |             --- |
+| Signals        |     0.215 |       85 |       --- |             --- |
 | I/O            |     0.004 |       15 |       210 |            7.14 |
 | Static Power   |     0.073 |          |           |                 |
-| Total          |     0.530 |          |           |                 |
+| Total          |     0.542 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.468 |       0.457 |      0.010 |
+| Vccint    |       1.000 |     0.480 |       0.469 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -138,7 +138,7 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| seg_ststic |     0.457 |
+| seg_ststic |     0.469 |
 +------------+-----------+
 
 

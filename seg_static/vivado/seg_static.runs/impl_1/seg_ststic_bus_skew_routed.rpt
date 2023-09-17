@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu Sep 14 22:11:41 2023
+| Date         : Sat Sep 16 18:11:09 2023
 | Host         : LAPTOP-03UPN56G running 64-bit major release  (build 9200)
 | Command      : report_bus_skew -warn_on_violation -file seg_ststic_bus_skew_routed.rpt -pb seg_ststic_bus_skew_routed.pb -rpx seg_ststic_bus_skew_routed.rpx
 | Design       : seg_ststic

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Sep 16 17:55:51 2023
+# Process ID: 7600
+# Current directory: F:/project/seg_dynamic/vivado
+# Command line: wbtcv.exe -mode batch -source F:/project/seg_dynamic/vivado/seg_dynamic.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: F:/project/seg_dynamic/vivado/webtalk.log
+# Journal file: F:/project/seg_dynamic/vivado\webtalk.jou
+#-----------------------------------------------------------
+source F:/project/seg_dynamic/vivado/seg_dynamic.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Sep 16 17:55:52 2023...

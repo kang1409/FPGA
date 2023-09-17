@@ -101,7 +101,7 @@ module seg_ststic
         if(sys_rst_n == 1'b1)
             sel <= 4'b0000;
         else 
-            sel <= 4'b1111;
+            sel <= 4'b1000;
     end
 
     //将num与seg对应
