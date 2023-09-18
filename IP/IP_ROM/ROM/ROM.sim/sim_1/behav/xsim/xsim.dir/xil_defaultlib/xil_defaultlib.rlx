@@ -1,0 +1,8 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+F:/project/IP/IP_ROM/ROM/ROM.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+F:/project/IP/IP_ROM/ROM/ROM.srcs/sim_1/new/tb_rom.v,1695036393,verilog,,,,tb_rom,,,,,,,,
+F:/project/IP/IP_ROM/ROM/ROM.srcs/sources_1/ip/rom_256x8/sim/rom_256x8.v,1695030678,verilog,,F:/project/IP/IP_ROM/ROM/ROM.srcs/sources_1/new/rom.v,,rom_256x8,,,,,,,,
+F:/project/IP/IP_ROM/ROM/ROM.srcs/sources_1/new/rom.v,1695036110,verilog,,F:/project/IP/IP_ROM/ROM/ROM.srcs/sim_1/new/tb_rom.v,,rom,,,,,,,,
