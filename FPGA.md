@@ -241,6 +241,9 @@ gti commit -m "标签" 	//将文件提交到仓库
 git push -u origin master		//将本地仓库推送到远程仓库
 git remote add origin *****		//关联远程仓库
 git add .					//添加当前目录下所有未追踪的文件
+git branch					//列出所有分支
+git branch  (新分支名)			//创建新的分支
+git branch -d (分支名)			//删除分支
 ```
 
 

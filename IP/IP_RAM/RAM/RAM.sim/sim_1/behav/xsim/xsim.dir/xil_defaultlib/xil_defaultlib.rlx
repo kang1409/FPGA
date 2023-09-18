@@ -1,0 +1,8 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+F:/project/IP/IP_RAM/RAM/RAM.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+F:/project/IP/IP_RAM/RAM/RAM.srcs/sim_1/new/tb_ram.v,1695043985,verilog,,,,tb_ram,,,,,,,,
+F:/project/IP/IP_RAM/RAM/RAM.srcs/sources_1/ip/ram_256x8/sim/ram_256x8.v,1695039873,verilog,,F:/project/IP/IP_RAM/RAM/RAM.srcs/sources_1/new/ram.v,,ram_256x8,,,,,,,,
+F:/project/IP/IP_RAM/RAM/RAM.srcs/sources_1/new/ram.v,1695041657,verilog,,F:/project/IP/IP_RAM/RAM/RAM.srcs/sim_1/new/tb_ram.v,,ram,,,,,,,,
