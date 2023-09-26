@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Sep 21 17:53:24 2023
+# Process ID: 19396
+# Current directory: F:/project/IP/IP_RAM/RAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18352 F:\project\IP\IP_RAM\RAM\RAM.xpr
+# Log file: F:/project/IP/IP_RAM/RAM/vivado.log
+# Journal file: F:/project/IP/IP_RAM/RAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/project/IP/IP_RAM/RAM/RAM.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 21 17:54:48 2023...

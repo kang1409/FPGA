@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="pll_108_synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1695631703">
+  <File Type="PA-TCL" Name="pll_108.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="pll_108_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="pll_108_reports.tcl"/>
+  <File Type="RDS-RDS" Name="pll_108.vds"/>
+  <File Type="RDS-UTIL" Name="pll_108_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="pll_108_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="pll_108.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="pll_108_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="pll_108_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/pll_108">
+    <File Path="$PSRCDIR/sources_1/ip/pll_108/pll_108.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="pll_108"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/pll_108">
+    <File Path="$PSRCDIR/sources_1/ip/pll_108/pll_108.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="pll_108"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

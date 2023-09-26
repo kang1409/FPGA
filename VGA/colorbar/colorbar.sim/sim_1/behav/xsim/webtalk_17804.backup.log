@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Sep 24 21:43:20 2023
+# Process ID: 17804
+# Current directory: F:/project/VGA/colorbar/colorbar.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source F:/project/VGA/colorbar/colorbar.sim/sim_1/behav/xsim/xsim.dir/tb_colorbar_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/project/VGA/colorbar/colorbar.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: F:/project/VGA/colorbar/colorbar.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source F:/project/VGA/colorbar/colorbar.sim/sim_1/behav/xsim/xsim.dir/tb_colorbar_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 24 21:43:21 2023...

@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../colorbar.srcs/sources_1/ip/pll_108" \
+"../../../../colorbar.srcs/sources_1/ip/pll_108/pll_108_clk_wiz.v" \
+"../../../../colorbar.srcs/sources_1/ip/pll_108/pll_108.v" \
+"../../../../colorbar.srcs/sources_1/new/vag_colorbar.v" \
+"../../../../colorbar.srcs/sources_1/new/vga_ctrl.v" \
+"../../../../colorbar.srcs/sources_1/new/vga_pic.v" \
+"../../../../colorbar.srcs/sim_1/new/tb_colorbar.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
