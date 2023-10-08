@@ -1,0 +1,490 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Sep 27 20:36:48 2023
+# Process ID: 8632
+# Current directory: F:/project/VGA/vga_char/char.runs/synth_1
+# Command line: vivado.exe -log vga_char.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_char.tcl
+# Log file: F:/project/VGA/vga_char/char.runs/synth_1/vga_char.vds
+# Journal file: F:/project/VGA/vga_char/char.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga_char.tcl -notrace
+Command: synth_design -top vga_char -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7780 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 925.020 ; gain = 241.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vga_char' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_char.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pll_108' [F:/project/VGA/vga_char/char.runs/synth_1/.Xil/Vivado-8632-LAPTOP-03UPN56G/realtime/pll_108_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pll_108' (1#1) [F:/project/VGA/vga_char/char.runs/synth_1/.Xil/Vivado-8632-LAPTOP-03UPN56G/realtime/pll_108_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_pic' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:23]
+	Parameter char_xmin bound to: 11'b00000000000 
+	Parameter char_ymin bound to: 11'b00000000000 
+	Parameter char_xmax bound to: 11'b00011111111 
+	Parameter char_ymax bound to: 11'b00000111111 
+	Parameter H_VALID bound to: 11'b10100000000 
+	Parameter C_VALID bound to: 11'b10000000000 
+	Parameter RED bound to: 12'b111110000000 
+	Parameter ORANGE bound to: 12'b111111000000 
+	Parameter YELLOW bound to: 12'b111111111110 
+	Parameter GREEN bound to: 12'b000001111110 
+	Parameter CYAN bound to: 12'b000001111111 
+	Parameter BLUE bound to: 12'b000000011111 
+	Parameter PURPPLE bound to: 12'b111110000001 
+	Parameter BLACK bound to: 12'b000000000000 
+	Parameter WHITE bound to: 12'b111111111111 
+	Parameter GRAY bound to: 12'b110101101001 
+INFO: [Synth 8-4471] merging register 'char_reg[62][255:0]' into 'char_reg[63][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[61][255:0]' into 'char_reg[63][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[60][255:0]' into 'char_reg[63][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[59][255:0]' into 'char_reg[63][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[58][255:0]' into 'char_reg[63][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[57][255:0]' into 'char_reg[63][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[56][255:0]' into 'char_reg[63][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[55][255:0]' into 'char_reg[63][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[54][255:0]' into 'char_reg[63][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[52][255:0]' into 'char_reg[53][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[51][255:0]' into 'char_reg[53][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[3][255:0]' into 'char_reg[63][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[2][255:0]' into 'char_reg[63][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[1][255:0]' into 'char_reg[63][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-4471] merging register 'char_reg[0][255:0]' into 'char_reg[63][255:0]' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[62] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[61] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[60] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[59] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[58] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[57] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[56] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[55] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[54] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[52] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[51] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[3] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[2] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[1] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[0] was removed.  [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'vga_pic' (2#1) [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_ctrl' [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_ctrl.v:23]
+	Parameter H_MAX bound to: 11'b11010011000 
+	Parameter C_MAX bound to: 11'b10000101010 
+	Parameter PI_X_MAX bound to: 11'b10100000000 
+	Parameter PI_Y_MAX bound to: 11'b10000000000 
+	Parameter H_SYNAC bound to: 11'b00001110000 
+	Parameter H_BACK bound to: 11'b00011111000 
+	Parameter H_LEFT bound to: 11'b00000000000 
+	Parameter H_VIDEO bound to: 11'b10100000000 
+	Parameter H_RIGHT bound to: 11'b00000000000 
+	Parameter H_FRONT bound to: 11'b00000110000 
+	Parameter C_SYNAC bound to: 11'b00000000011 
+	Parameter C_BACK bound to: 11'b00000100110 
+	Parameter C_TOP bound to: 11'b00000000000 
+	Parameter C_VIDEO bound to: 11'b10000000000 
+	Parameter C_BOTTOM bound to: 11'b00000000000 
+	Parameter C_FRONT bound to: 11'b00000000001 
+INFO: [Synth 8-6155] done synthesizing module 'vga_ctrl' (3#1) [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vga_char' (4#1) [F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_char.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 997.391 ; gain = 313.496
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 997.391 ; gain = 313.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 997.391 ; gain = 313.496
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 997.391 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108/pll_108_in_context.xdc] for cell 'pll_108_inst'
+Finished Parsing XDC File [f:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108/pll_108_in_context.xdc] for cell 'pll_108_inst'
+Parsing XDC File [F:/project/VGA/vga_char/char.srcs/constrs_1/new/vga_char.xdc]
+Finished Parsing XDC File [F:/project/VGA/vga_char/char.srcs/constrs_1/new/vga_char.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/project/VGA/vga_char/char.srcs/constrs_1/new/vga_char.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_char_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_char_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1124.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1124.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1124.684 ; gain = 440.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1124.684 ; gain = 440.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  f:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108/pll_108_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  f:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108/pll_108_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for pll_108_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1124.684 ; gain = 440.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1124.684 ; gain = 440.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	              256 Bit    Registers := 49    
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_char 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module vga_pic 
+Detailed RTL Component Info : 
++---Registers : 
+	              256 Bit    Registers := 49    
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 1     
+Module vga_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[50][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[49][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[48][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[53][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[47][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[46][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[45][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[44][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[43][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[42][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[41][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[40][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[39][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[38][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[37][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[36][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[35][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[34][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[33][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[32][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[31][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[30][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[29][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[28][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[27][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[26][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[25][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[24][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[23][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[22][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[21][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[20][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[19][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[18][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[17][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[16][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[15][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[14][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[13][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[12][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[11][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[10][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[9][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[8][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[7][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[6][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[5][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[4][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[63][255] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[50][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[49][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[48][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[53][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[47][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[46][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[45][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[44][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[43][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[42][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[41][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[40][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[39][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[38][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[37][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[36][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[35][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[34][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[33][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[32][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[31][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[30][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[29][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[28][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[27][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[26][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[25][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[24][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[23][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[22][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[21][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[20][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[19][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[18][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[17][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[16][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[15][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[14][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[13][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[12][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[11][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[10][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[9][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[8][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[7][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[6][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[5][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[4][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[63][254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[50][253] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga_pic_inst/\char_reg[49][253] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'vga_pic_inst/pi_data_reg[0]' (FDC) to 'vga_pic_inst/pi_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga_pic_inst/pi_data_reg[1]' (FDC) to 'vga_pic_inst/pi_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga_pic_inst/pi_data_reg[2]' (FDC) to 'vga_pic_inst/pi_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga_pic_inst/pi_data_reg[3]' (FDC) to 'vga_pic_inst/pi_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'vga_pic_inst/pi_data_reg[4]' (FDC) to 'vga_pic_inst/pi_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'vga_pic_inst/pi_data_reg[5]' (FDC) to 'vga_pic_inst/pi_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga_pic_inst/pi_data_reg[7]' (FDC) to 'vga_pic_inst/pi_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'vga_pic_inst/pi_data_reg[8]' (FDC) to 'vga_pic_inst/pi_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga_pic_inst/pi_data_reg[9]' (FDC) to 'vga_pic_inst/pi_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vga_pic_inst/pi_data_reg[10]' (FDC) to 'vga_pic_inst/pi_data_reg[11]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1124.684 ; gain = 440.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1124.684 ; gain = 440.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1124.684 ; gain = 440.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 1127.340 ; gain = 443.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1133.164 ; gain = 449.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1133.164 ; gain = 449.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1133.164 ; gain = 449.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1133.164 ; gain = 449.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1133.164 ; gain = 449.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1133.164 ; gain = 449.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |pll_108       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |pll_108 |     1|
+|2     |LUT2    |     8|
+|3     |LUT3    |     9|
+|4     |LUT4    |    17|
+|5     |LUT5    |    64|
+|6     |LUT6    |   206|
+|7     |MUXF7   |    33|
+|8     |MUXF8   |     1|
+|9     |FDCE    |    25|
+|10    |IBUF    |     1|
+|11    |OBUF    |    15|
++------+--------+------+
+
+Report Instance Areas: 
++------+----------------+---------+------+
+|      |Instance        |Module   |Cells |
++------+----------------+---------+------+
+|1     |top             |         |   381|
+|2     |  vga_ctrl_inst |vga_ctrl |   360|
+|3     |  vga_pic_inst  |vga_pic  |     2|
++------+----------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1133.164 ; gain = 449.270
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1133.164 ; gain = 321.977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1133.164 ; gain = 449.270
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1143.871 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1143.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+146 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1143.871 ; gain = 730.672
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1143.871 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/project/VGA/vga_char/char.runs/synth_1/vga_char.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vga_char_utilization_synth.rpt -pb vga_char_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 27 20:37:21 2023...

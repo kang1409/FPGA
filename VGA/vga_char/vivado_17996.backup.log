@@ -1,0 +1,703 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Sep 27 15:12:35 2023
+# Process ID: 17996
+# Current directory: F:/project/VGA/vga_char
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19840 F:\project\VGA\vga_char\char.xpr
+# Log file: F:/project/VGA/vga_char/vivado.log
+# Journal file: F:/project/VGA/vga_char\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/project/VGA/vga_char/char.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 955.953 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/VGA/vga_char/char.runs/impl_1/vga_char.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/VGA/vga_char/char.runs/impl_1/vga_char.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'F:/vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_char' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_char_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_108_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_108
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_char.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_char
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sim_1/new/tb_char.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_char
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+"xelab -wto 826a02e68e564fb3aa6c29b54af61331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_char_behav xil_defaultlib.tb_char xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 826a02e68e564fb3aa6c29b54af61331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_char_behav xil_defaultlib.tb_char xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=37,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pll_108_clk_wiz
+Compiling module xil_defaultlib.pll_108
+Compiling module xil_defaultlib.vga_pic
+Compiling module xil_defaultlib.vga_ctrl
+Compiling module xil_defaultlib.vga_char
+Compiling module xil_defaultlib.tb_char_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_char_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_char_behav -key {Behavioral:sim_1:Functional:tb_char} -tclbatch {tb_char.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_char.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2361.875 ; gain = 94.020
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_char_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 2361.875 ; gain = 109.105
+run 20 ms
+run: Time (s): cpu = 00:00:19 ; elapsed = 00:01:34 . Memory (MB): peak = 2445.535 ; gain = 83.660
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'F:/vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_char' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_char_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_108_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_108
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_char.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_char
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sim_1/new/tb_char.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_char
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+"xelab -wto 826a02e68e564fb3aa6c29b54af61331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_char_behav xil_defaultlib.tb_char xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 826a02e68e564fb3aa6c29b54af61331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_char_behav xil_defaultlib.tb_char xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=37,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pll_108_clk_wiz
+Compiling module xil_defaultlib.pll_108
+Compiling module xil_defaultlib.vga_pic
+Compiling module xil_defaultlib.vga_ctrl
+Compiling module xil_defaultlib.vga_char
+Compiling module xil_defaultlib.tb_char_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_char_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_char_behav -key {Behavioral:sim_1:Functional:tb_char} -tclbatch {tb_char.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_char.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2453.836 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_char_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 2453.836 ; gain = 0.000
+run all
+run 20 ms
+run: Time (s): cpu = 00:00:22 ; elapsed = 00:04:24 . Memory (MB): peak = 2453.836 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/VGA/vga_char/char.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Sep 27 15:27:09 2023] Launched synth_1...
+Run output will be captured here: F:/project/VGA/vga_char/char.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/VGA/vga_char/char.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Sep 27 15:27:29 2023] Launched synth_1...
+Run output will be captured here: F:/project/VGA/vga_char/char.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs impl_1 -jobs 10
+[Wed Sep 27 15:28:33 2023] Launched impl_1...
+Run output will be captured here: F:/project/VGA/vga_char/char.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Sep 27 15:29:50 2023] Launched impl_1...
+Run output will be captured here: F:/project/VGA/vga_char/char.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2461.434 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/VGA/vga_char/char.runs/impl_1/vga_char.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/VGA/vga_char/char.runs/impl_1/vga_char.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/VGA/vga_char/char.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Sep 27 15:31:55 2023] Launched synth_1...
+Run output will be captured here: F:/project/VGA/vga_char/char.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Sep 27 15:33:18 2023] Launched impl_1...
+Run output will be captured here: F:/project/VGA/vga_char/char.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Sep 27 15:34:08 2023] Launched impl_1...
+Run output will be captured here: F:/project/VGA/vga_char/char.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2464.645 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/VGA/vga_char/char.runs/impl_1/vga_char.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/VGA/vga_char/char.runs/impl_1/vga_char.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'F:/vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_char' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_char_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_108_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_108
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_char.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_char
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sim_1/new/tb_char.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_char
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+"xelab -wto 826a02e68e564fb3aa6c29b54af61331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_char_behav xil_defaultlib.tb_char xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 826a02e68e564fb3aa6c29b54af61331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_char_behav xil_defaultlib.tb_char xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=37,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pll_108_clk_wiz
+Compiling module xil_defaultlib.pll_108
+Compiling module xil_defaultlib.vga_pic
+Compiling module xil_defaultlib.vga_ctrl
+Compiling module xil_defaultlib.vga_char
+Compiling module xil_defaultlib.tb_char_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_char_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_char_behav -key {Behavioral:sim_1:Functional:tb_char} -tclbatch {tb_char.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_char.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2464.645 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_char_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2464.645 ; gain = 0.000
+run 1 s
+run: Time (s): cpu = 00:00:58 ; elapsed = 00:09:35 . Memory (MB): peak = 2464.645 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'F:/vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_char' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_char_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_108_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_108
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_char.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_char
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sim_1/new/tb_char.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_char
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+"xelab -wto 826a02e68e564fb3aa6c29b54af61331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_char_behav xil_defaultlib.tb_char xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 826a02e68e564fb3aa6c29b54af61331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_char_behav xil_defaultlib.tb_char xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=37,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pll_108_clk_wiz
+Compiling module xil_defaultlib.pll_108
+Compiling module xil_defaultlib.vga_pic
+Compiling module xil_defaultlib.vga_ctrl
+Compiling module xil_defaultlib.vga_char
+Compiling module xil_defaultlib.tb_char_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_char_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_char_behav -key {Behavioral:sim_1:Functional:tb_char} -tclbatch {tb_char.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_char.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2464.645 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_char_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 2464.645 ; gain = 0.000
+run 1 s
+run: Time (s): cpu = 00:01:07 ; elapsed = 00:08:02 . Memory (MB): peak = 3051.715 ; gain = 587.070
+run all
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:01:50 . Memory (MB): peak = 3051.715 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim/simulate.log"
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/VGA/vga_char/char.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Sep 27 16:02:11 2023] Launched synth_1...
+Run output will be captured here: F:/project/VGA/vga_char/char.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'F:/vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_char' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_char_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_108_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_108
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_char.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_char
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sim_1/new/tb_char.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_char
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+"xelab -wto 826a02e68e564fb3aa6c29b54af61331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_char_behav xil_defaultlib.tb_char xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 826a02e68e564fb3aa6c29b54af61331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_char_behav xil_defaultlib.tb_char xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=37,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pll_108_clk_wiz
+Compiling module xil_defaultlib.pll_108
+Compiling module xil_defaultlib.vga_pic
+Compiling module xil_defaultlib.vga_ctrl
+Compiling module xil_defaultlib.vga_char
+Compiling module xil_defaultlib.tb_char_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_char_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_char_behav -key {Behavioral:sim_1:Functional:tb_char} -tclbatch {tb_char.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_char.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 3051.715 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_char_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 3051.715 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'F:/vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_char' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_char_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_108_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_108
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_char.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_char
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_pic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/VGA/vga_char/char.srcs/sim_1/new/tb_char.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_char
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+"xelab -wto 826a02e68e564fb3aa6c29b54af61331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_char_behav xil_defaultlib.tb_char xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 826a02e68e564fb3aa6c29b54af61331 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_char_behav xil_defaultlib.tb_char xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=37,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pll_108_clk_wiz
+Compiling module xil_defaultlib.pll_108
+Compiling module xil_defaultlib.vga_pic
+Compiling module xil_defaultlib.vga_ctrl
+Compiling module xil_defaultlib.vga_char
+Compiling module xil_defaultlib.tb_char_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_char_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_char_behav -key {Behavioral:sim_1:Functional:tb_char} -tclbatch {tb_char.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_char.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance tb_char_1.vga_char_inst.pll_108_inst.inst.plle2_adv_inst are not same.
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 3051.715 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_char_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 3051.715 ; gain = 0.000
+run 1 s
+run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:48 . Memory (MB): peak = 3051.715 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/VGA/vga_char/char.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Wed Sep 27 16:07:13 2023] Launched synth_1...
+Run output will be captured here: F:/project/VGA/vga_char/char.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Sep 27 16:08:02 2023] Launched impl_1...
+Run output will be captured here: F:/project/VGA/vga_char/char.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Sep 27 16:09:04 2023] Launched impl_1...
+Run output will be captured here: F:/project/VGA/vga_char/char.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3051.715 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/VGA/vga_char/char.runs/impl_1/vga_char.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/VGA/vga_char/char.runs/impl_1/vga_char.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 27 16:10:54 2023...

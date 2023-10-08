@@ -1,0 +1,11 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+F:/project/VGA/vga_char/char.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+F:/project/VGA/vga_char/char.srcs/sim_1/new/tb_char.v,1695798995,verilog,,,,tb_char,,,../../../../char.srcs/sources_1/ip/pll_108,,,,,
+F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108.v,1695817566,verilog,,F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_char.v,,pll_108,,,../../../../char.srcs/sources_1/ip/pll_108,,,,,
+F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108_clk_wiz.v,1695817565,verilog,,F:/project/VGA/vga_char/char.srcs/sources_1/ip/pll_108/pll_108.v,,pll_108_clk_wiz,,,../../../../char.srcs/sources_1/ip/pll_108,,,,,
+F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_char.v,1695802779,verilog,,F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_ctrl.v,,vga_char,,,../../../../char.srcs/sources_1/ip/pll_108,,,,,
+F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_ctrl.v,1695805062,verilog,,F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v,,vga_ctrl,,,../../../../char.srcs/sources_1/ip/pll_108,,,,,
+F:/project/VGA/vga_char/char.srcs/sources_1/new/vga_pic.v,1695817435,verilog,,F:/project/VGA/vga_char/char.srcs/sim_1/new/tb_char.v,,vga_pic,,,../../../../char.srcs/sources_1/ip/pll_108,,,,,

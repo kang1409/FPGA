@@ -1,0 +1,1486 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Oct  8 19:12:38 2023
+# Process ID: 2316
+# Current directory: F:/project/RS232/RS232
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3444 F:\project\RS232\RS232\RS232.xpr
+# Log file: F:/project/RS232/RS232/vivado.log
+# Journal file: F:/project/RS232/RS232\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/project/RS232/RS232/RS232.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 872.922 ; gain = 165.082
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/project/RS232/RS232/RS232.srcs/sim_1/new/tb_uart_tx.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 F:/project/RS232/RS232/RS232.srcs/sim_1/new/tb_uart_tx.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse F:/project/RS232/RS232/RS232.srcs/sim_1/new/tb_rs232.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/RS232/RS232/RS232.runs/synth_1
+
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [VRFC 10-2458] undeclared symbol rs, assumed default net type wire [F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v:80]
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v:77]
+ERROR: [VRFC 10-2865] module 'tb_rs232' ignored due to previous errors [F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_runs synth_1 -jobs 10
+[Sun Oct  8 19:17:33 2023] Launched synth_1...
+Run output will be captured here: F:/project/RS232/RS232/RS232.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/RS232/RS232/RS232.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sun Oct  8 19:22:07 2023] Launched synth_1...
+Run output will be captured here: F:/project/RS232/RS232/RS232.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [VRFC 10-2458] undeclared symbol rs, assumed default net type wire [F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v:80]
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v:77]
+ERROR: [VRFC 10-2865] module 'tb_rs232' ignored due to previous errors [F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v:77]
+ERROR: [VRFC 10-2865] module 'tb_rs232' ignored due to previous errors [F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/xsim.dir/tb_rs232_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct  8 19:24:55 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 983.328 ; gain = 43.324
+run 20 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+export_ip_user_files -of_objects  [get_files F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse F:/project/RS232/RS232/RS232.srcs/sim_1/new/tb_uart_tx.v
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj rs232_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot rs232_behav xil_defaultlib.rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot rs232_behav xil_defaultlib.rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot rs232_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/xsim.dir/rs232_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct  8 19:34:59 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rs232_behav -key {Behavioral:sim_1:Functional:rs232} -tclbatch {rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1009.586 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_uart_tx' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_uart_tx_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_uart_tx
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_uart_tx_behav xil_defaultlib.tb_uart_tx xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_uart_tx_behav xil_defaultlib.tb_uart_tx xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.tb_uart_tx
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_uart_tx_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_uart_tx_behav -key {Behavioral:sim_1:Functional:tb_uart_tx} -tclbatch {tb_uart_tx.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_uart_tx.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_uart_tx_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sun Oct  8 19:37:12 2023] Launched synth_1...
+Run output will be captured here: F:/project/RS232/RS232/RS232.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_uart_tx.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_uart_tx.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/project/RS232/RS232/RS232.srcs/sim_1/new/tb_uart_rx.v w ]
+add_files -fileset sim_1 F:/project/RS232/RS232/RS232.srcs/sim_1/new/tb_uart_rx.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_uart_rx' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_uart_rx_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/new/tb_uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_uart_rx
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_uart_rx_behav xil_defaultlib.tb_uart_rx xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_uart_rx_behav xil_defaultlib.tb_uart_rx xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.tb_uart_rx
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_uart_rx_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/xsim.dir/tb_uart_rx_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct  8 19:40:58 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_uart_rx_behav -key {Behavioral:sim_1:Functional:tb_uart_rx} -tclbatch {tb_uart_rx.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_uart_rx.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_uart_rx_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1009.586 ; gain = 0.000
+run 20 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/project/RS232/RS232/RS232.srcs/sim_1/new/tb_uart_rx.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 F:/project/RS232/RS232/RS232.srcs/sim_1/new/tb_uart_rx.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -force -norecurse F:/project/RS232/RS232/RS232.srcs/sim_1/new/tb_rs232.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [VRFC 10-2458] undeclared symbol rs, assumed default net type wire [F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v:90]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [VRFC 10-2458] undeclared symbol rs, assumed default net type wire [F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v:90]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1009.586 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [VRFC 10-2458] undeclared symbol rs, assumed default net type wire [F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v:84]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcsg324-1
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1289.543 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Common 17-344] 'open_run' was cancelled
+INFO: [Vivado 12-5357] 'setup' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+run 20 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+ERROR: [VRFC 10-5010] illegal character '2' in binary number 1'b2 [F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v:73]
+ERROR: [VRFC 10-2865] module 'uart_tx' ignored due to previous errors [F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+ERROR: [VRFC 10-5010] illegal character '2' in binary number 2'b2 [F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v:73]
+ERROR: [VRFC 10-2865] module 'uart_tx' ignored due to previous errors [F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rs232' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_rs232_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs232
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/RS232/RS232/RS232.srcs/sim_1/imports/new/tb_rs232.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rs232
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+"xelab -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a6303df2d94d4bb7ea136ba740c179 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rs232_behav xil_defaultlib.tb_rs232 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.rs232
+Compiling module xil_defaultlib.tb_rs232
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rs232_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/RS232/RS232/RS232.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rs232_behav -key {Behavioral:sim_1:Functional:tb_rs232} -tclbatch {tb_rs232.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_rs232.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rs232_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 20 ms
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/RS232/RS232/RS232.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sun Oct  8 20:41:50 2023] Launched synth_1...
+Run output will be captured here: F:/project/RS232/RS232/RS232.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sun Oct  8 20:42:28 2023] Launched impl_1...
+Run output will be captured here: F:/project/RS232/RS232/RS232.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1337.730 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1399.383 ; gain = 0.352
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1399.383 ; gain = 0.352
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1399.383 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  8 20:45:13 2023...
