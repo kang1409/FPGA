@@ -1,0 +1,46 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Oct 16 21:08:44 2023
+| Host         : LAPTOP-03UPN56G running 64-bit major release  (build 9200)
+| Command      : report_methodology -file vga_rom_methodology_drc_routed.rpt -pb vga_rom_methodology_drc_routed.pb -rpx vga_rom_methodology_drc_routed.rpx
+| Design       : vga_rom
+| Device       : xc7a35tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 2
++----------+----------+------------------------------+------------+
+| Rule     | Severity | Description                  | Violations |
++----------+----------+------------------------------+------------+
+| LUTAR-1  | Warning  | LUT drives async reset alert | 1          |
+| SYNTH-13 | Warning  | combinational multiplier     | 1          |
++----------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell vga_pic_inst/pll_clk_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) vga_ctrl_inst/cnt_c_reg[0]/CLR, vga_ctrl_inst/cnt_c_reg[10]/CLR, vga_ctrl_inst/cnt_c_reg[1]/CLR, vga_ctrl_inst/cnt_c_reg[2]/CLR, vga_ctrl_inst/cnt_c_reg[3]/CLR, vga_ctrl_inst/cnt_c_reg[4]/CLR, vga_ctrl_inst/cnt_c_reg[5]/CLR, vga_ctrl_inst/cnt_c_reg[6]/CLR, vga_ctrl_inst/cnt_c_reg[7]/CLR, vga_ctrl_inst/cnt_c_reg[8]/CLR, vga_ctrl_inst/cnt_c_reg[9]/CLR, vga_ctrl_inst/cnt_h_reg[0]/CLR, vga_ctrl_inst/cnt_h_reg[10]/CLR, vga_ctrl_inst/cnt_h_reg[1]/CLR, vga_ctrl_inst/cnt_h_reg[2]/CLR (the first 15 of 49 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-13#1 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance vga_pic_inst/addra0.
+Related violations: <none>
+
+

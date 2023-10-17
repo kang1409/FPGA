@@ -32,24 +32,24 @@ module vga_ctrl(
     output  wire [11:0]  rgb         //RGB图像色彩信息
     );
 
-    parameter H_MAX = 11'd800;
-    parameter C_MAX = 11'd525;
-    parameter PI_X_MAX = 11'd640;
-    parameter PI_Y_MAX = 11'd480;
+    parameter H_MAX = 11'd1688;
+    parameter C_MAX = 11'd1066;
+    parameter PI_X_MAX = 11'd1280;
+    parameter PI_Y_MAX = 11'd1024;
 
-    parameter H_SYNAC = 11'd96;
-    parameter H_BACK = 11'd40;
-    parameter H_LEFT  = 11'd8;
-    parameter H_VIDEO = 11'd640;
-    parameter H_RIGHT = 11'd8;
-    parameter H_FRONT = 11'd8;
+    parameter H_SYNAC = 11'd112;
+    parameter H_BACK = 11'd248;
+    parameter H_LEFT  = 11'd0;
+    parameter H_VIDEO = 11'd1280;
+    parameter H_RIGHT = 11'd0;
+    parameter H_FRONT = 11'd48;
     
-    parameter C_SYNAC = 11'd2;
-    parameter C_BACK = 11'd25;
-    parameter C_TOP  = 11'd8;
-    parameter C_VIDEO = 11'd480;
-    parameter C_BOTTOM = 11'd8;
-    parameter C_FRONT = 11'd2;
+    parameter C_SYNAC = 11'd3;
+    parameter C_BACK = 11'd38;
+    parameter C_TOP  = 11'd0;
+    parameter C_VIDEO = 11'd1024;
+    parameter C_BOTTOM = 11'd0;
+    parameter C_FRONT = 11'd1;
 
     reg [10:0]  cnt_h;  //行计数器
     reg [10:0]  cnt_c;  //场计数器

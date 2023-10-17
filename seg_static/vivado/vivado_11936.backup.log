@@ -1,0 +1,2522 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Sep 16 18:08:19 2023
+# Process ID: 11936
+# Current directory: F:/project/seg_static/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7568 F:\project\seg_static\vivado\seg_static.xpr
+# Log file: F:/project/seg_static/vivado/vivado.log
+# Journal file: F:/project/seg_static/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/project/seg_static/vivado/seg_static.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/seg_static/vivado/seg_static.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 18:09:35 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_static/vivado/seg_static.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 18:10:27 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_static/vivado/seg_static.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1159.215 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1810.008 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1810.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1810.008 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 1974.082 ; gain = 1053.047
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 18:12:59 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_static/vivado/seg_static.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2067.219 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_static/vivado/seg_static.runs/impl_1/seg_ststic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_static/vivado/seg_static.runs/impl_1/seg_ststic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+close_design
+close_project
+open_project F:/project/seg_dynamic/vivado/seg_dynamic.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3320.812 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 3332.109 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 3332.109 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3332.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 18:24:56 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 18:26:08 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 18:27:37 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3500.422 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 19:16:52 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 19:17:28 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 19:18:23 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3515.199 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 19:20:29 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 19:21:11 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 19:22:35 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3518.293 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/project/seg_dynamic/sim/tb_seg_dynamic.v w ]
+add_files -fileset sim_1 F:/project/seg_dynamic/sim/tb_seg_dynamic.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+ERROR: [VRFC 10-1280] procedural assignment to a non-register sys_clk is not permitted, left-hand side should be reg/integer/time/genvar [F:/project/seg_dynamic/sim/tb_seg_dynamic.v:31]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register sys_rst is not permitted, left-hand side should be reg/integer/time/genvar [F:/project/seg_dynamic/sim/tb_seg_dynamic.v:32]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register sys_rst is not permitted, left-hand side should be reg/integer/time/genvar [F:/project/seg_dynamic/sim/tb_seg_dynamic.v:34]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register sys_rst is not permitted, left-hand side should be reg/integer/time/genvar [F:/project/seg_dynamic/sim/tb_seg_dynamic.v:36]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register sys_clk is not permitted, left-hand side should be reg/integer/time/genvar [F:/project/seg_dynamic/sim/tb_seg_dynamic.v:39]
+ERROR: [VRFC 10-2865] module 'tb_seg_dynamic' ignored due to previous errors [F:/project/seg_dynamic/sim/tb_seg_dynamic.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <seg_dynamic> not found while processing module instance <tb_seg_dynamic> [F:/project/seg_dynamic/sim/tb_seg_dynamic.v:42]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <seg_dynamic> not found while processing module instance <seg_dynamic_inst> [F:/project/seg_dynamic/sim/tb_seg_dynamic.v:42]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <seg_dynamic> not found while processing module instance <seg_dynamic_inst> [F:/project/seg_dynamic/sim/tb_seg_dynamic.v:44]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+WARNING: [VRFC 10-986] literal value truncated to fit in 10 bits [F:/project/seg_dynamic/sim/tb_seg_dynamic.v:45]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <seg_dynamic> not found while processing module instance <seg_dynamic_inst> [F:/project/seg_dynamic/sim/tb_seg_dynamic.v:44]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <seg_dynamic> not found while processing module instance <seg_dynamic_inst> [F:/project/seg_dynamic/sim/tb_seg_dynamic.v:44]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/xsim.dir/tb_seg_dynamic_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Sep 16 19:45:43 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 3634.094 ; gain = 40.648
+run all
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3639.582 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 3639.582 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 19:54:19 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 3639.582 ; gain = 0.000
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 19:56:10 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 19:57:03 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3639.582 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+startgroup
+set_property package_pin "" [get_ports [list  {sel[7]}]]
+place_ports {sel[0]} G2
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sel[6]}]]
+place_ports {sel[1]} C2
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sel[5]}]]
+place_ports {sel[2]} C1
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sel[4]}]]
+place_ports {sel[3]} H1
+endgroup
+place_ports {sel[4]} G1
+place_ports {sel[5]} F1
+place_ports {sel[6]} E1
+place_ports {sel[7]} G6
+save_constraints -force
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 20:04:36 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 20:05:40 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 20:06:39 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3639.582 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 20:09:55 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 20:11:19 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 20:12:43 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 20:14:12 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3639.582 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3639.582 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_hw_manager
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3639.582 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'cnt_ms' on this module [F:/project/seg_dynamic/sim/tb_seg_dynamic.v:53]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3639.582 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3766.750 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3766.750 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3766.750 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3766.750 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3766.750 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3951.195 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 20:50:32 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 20:51:59 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 20:53:37 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+close_design
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 21:02:44 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 21:04:29 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 21:06:21 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3951.195 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3951.195 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 21:21:12 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 21:23:26 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 21:25:36 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3951.195 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 3951.195 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 3951.195 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3951.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 21:26:33 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 21:41:11 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 21:42:54 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 21:43:45 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_seg_dynamic' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_seg_dynamic_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/rtl/seg_dynatic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dynatic
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/project/seg_dynamic/sim/tb_seg_dynamic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seg_dynamic
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+"xelab -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 8fcbb98829984ce1b3a11fd90bcb8010 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_seg_dynamic_behav xil_defaultlib.tb_seg_dynamic xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_dynatic
+Compiling module xil_defaultlib.tb_seg_dynamic
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_seg_dynamic_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/project/seg_dynamic/vivado/seg_dynamic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_seg_dynamic_behav -key {Behavioral:sim_1:Functional:tb_seg_dynamic} -tclbatch {tb_seg_dynamic.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_seg_dynamic.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_seg_dynamic_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3951.195 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 21:52:19 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 21:54:24 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 21:55:53 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 22:01:52 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 22:02:45 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 22:04:00 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 22:10:54 2023] Launched synth_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 22:11:39 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 22:12:36 2023] Launched impl_1...
+Run output will be captured here: F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/seg_dynamic/vivado/seg_dynamic.runs/impl_1/seg_dynatic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+close_design
+close_project
+create_project nixie_tube F:/project/test/vivado/nixie_tube -part xc7a35tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/vivado/2019.2/data/ip'.
+file mkdir F:/project/test/vivado/nixie_tube/nixie_tube.srcs/sources_1/new
+close [ open F:/project/test/vivado/nixie_tube/nixie_tube.srcs/sources_1/new/nixie_tube.v w ]
+add_files F:/project/test/vivado/nixie_tube/nixie_tube.srcs/sources_1/new/nixie_tube.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 22:34:15 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 22:34:42 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3951.195 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 3951.195 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 3951.195 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3951.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg[7]} {seg[6]} {seg[5]} {seg[4]} {seg[3]} {seg[2]} {seg[1]} {seg[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel[3]} {sel[2]} {sel[1]} {sel[0]}]]
+place_ports sys_clk P17
+place_ports sys_rst_n R11
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_rst_n]]
+place_ports {sel[3]} G2
+place_ports {sel[2]} C2
+place_ports {sel[1]} C1
+place_ports {sel[0]} H1
+place_ports {seg[7]} B4
+place_ports {seg[6]} A4
+place_ports {seg[5]} A3
+place_ports {seg[4]} B1
+place_ports {seg[3]} A1
+place_ports {seg[2]} B3
+place_ports {seg[1]} B2
+place_ports {seg[0]} D5
+file mkdir F:/project/test/vivado/nixie_tube/nixie_tube.srcs/constrs_1/new
+close [ open F:/project/test/vivado/nixie_tube/nixie_tube.srcs/constrs_1/new/nixe_yube.xdc w ]
+add_files -fileset constrs_1 F:/project/test/vivado/nixie_tube/nixie_tube.srcs/constrs_1/new/nixe_yube.xdc
+set_property target_constrs_file F:/project/test/vivado/nixie_tube/nixie_tube.srcs/constrs_1/new/nixe_yube.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 22:39:44 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+close_design
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 22:42:30 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3951.195 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3951.195 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3951.195 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3951.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 22:43:52 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 22:46:11 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 22:47:47 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 22:48:49 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 22:52:38 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 22:53:33 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 22:54:58 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 22:58:50 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 22:59:46 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 23:00:51 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 23:05:07 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 23:06:49 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 23:08:09 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sat Sep 16 23:10:08 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sat Sep 16 23:10:49 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Sep 16 23:11:48 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sun Sep 17 00:15:11 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sun Sep 17 00:17:07 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sun Sep 17 00:19:25 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Sun Sep 17 00:22:23 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sun Sep 17 00:23:04 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sun Sep 17 00:24:16 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sun Sep 17 00:26:29 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sun Sep 17 00:27:12 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sun Sep 17 00:28:25 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sun Sep 17 00:32:41 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sun Sep 17 00:33:14 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1
+
+close_design
+launch_runs synth_1 -jobs 10
+[Sun Sep 17 00:35:19 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sun Sep 17 00:36:08 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sun Sep 17 00:38:46 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sun Sep 17 00:39:21 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3951.195 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 3951.195 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 3951.195 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3951.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg2[7]} {seg2[6]} {seg2[5]} {seg2[4]} {seg2[3]} {seg2[2]} {seg2[1]} {seg2[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel2[3]} {sel2[2]} {sel2[1]} {sel2[0]}]]
+place_ports {sel2[3]} G1
+place_ports {sel2[2]} F1
+place_ports {sel2[1]} E1
+place_ports {sel2[0]} G6
+place_ports {seg2[7]} D4
+place_ports {seg2[6]} E3
+place_ports {seg2[5]} D3
+place_ports {seg2[4]} F4
+place_ports {seg2[3]} F3
+place_ports {seg2[2]} E2
+place_ports {seg2[1]} D2
+place_ports {seg2[0]} H2
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sun Sep 17 00:44:06 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Sun Sep 17 00:44:53 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sun Sep 17 00:46:25 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Sun Sep 17 00:48:40 2023] Launched synth_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/synth_1/runme.log
+close_design
+launch_runs impl_1 -jobs 10
+[Sun Sep 17 00:49:23 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sun Sep 17 00:50:12 2023] Launched impl_1...
+Run output will be captured here: F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3951.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/project/test/vivado/nixie_tube/nixie_tube.runs/impl_1/nixie_tube.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 17 00:52:06 2023...

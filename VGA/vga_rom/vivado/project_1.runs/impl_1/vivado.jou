@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Oct 16 21:10:02 2023
+# Process ID: 19916
+# Current directory: F:/project/VGA/vga_rom/vivado/project_1.runs/impl_1
+# Command line: vivado.exe -log vga_rom.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vga_rom.tcl -notrace
+# Log file: F:/project/VGA/vga_rom/vivado/project_1.runs/impl_1/vga_rom.vdi
+# Journal file: F:/project/VGA/vga_rom/vivado/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source vga_rom.tcl -notrace

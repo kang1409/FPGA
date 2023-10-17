@@ -43,31 +43,6 @@ module vga_pic(
                 WHITE   = 12'hFFF,
                 GRAY    = 12'hD69;
 
-    always @(posedge clk or posedge rst) begin
-        if(rst == 1'b1)
-            pi_data <= WHITE;
-        else if ((pi_x >= 11'd0) && (pi_x <= H_VALID / 10))
-            pi_data <= ORANGE;
-        else if ((pi_x >= H_VALID / 10 * 1) && (pi_x <= H_VALID / 10 * 2))
-            pi_data <= YELLOW;
-        else if ((pi_x >= H_VALID / 10 * 2) && (pi_x <= H_VALID / 10 * 3))
-            pi_data <= GREEN;
-        else if ((pi_x >= H_VALID / 10 * 3) && (pi_x <= H_VALID / 10 * 4))
-            pi_data <= CYAN;
-        else if ((pi_x >= H_VALID / 10 * 4) && (pi_x <= H_VALID / 10 * 5))
-            pi_data <= BLUE;
-        else if ((pi_x >= H_VALID / 10 * 5) && (pi_x <= H_VALID / 10 * 6))
-            pi_data <= PURPPLE;
-        else if ((pi_x >= H_VALID / 10 * 6) && (pi_x <= H_VALID / 10 * 7))
-            pi_data <= BLACK;
-        else if ((pi_x >= H_VALID / 10 * 7) && (pi_x <= H_VALID / 10 * 8))
-            pi_data <= WHITE;
-        else if ((pi_x >= H_VALID / 10 * 8) && (pi_x <= H_VALID / 10 * 9))
-            pi_data <= GRAY;
-        else if ((pi_x >= H_VALID / 10 * 9) && (pi_x <= H_VALID))
-            pi_data <= RED;
-        else
-            pi_data <= BLACK;
-    end
+
     
 endmodule

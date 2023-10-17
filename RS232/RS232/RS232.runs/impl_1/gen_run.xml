@@ -1,43 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1696768948">
-  <File Type="BITSTR-BMM" Name="rs232_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="rs232_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="rs232_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="rs232_power_routed.rpt"/>
   <File Type="PA-TCL" Name="rs232.tcl"/>
-  <File Type="OPT-TIMING" Name="rs232_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="rs232_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="rs232_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="rs232_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="rs232_reports.tcl"/>
+  <File Type="OPT-DCP" Name="rs232_opt.dcp"/>
   <File Type="OPT-DRC" Name="rs232_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="rs232.hwdef"/>
   <File Type="PWROPT-DCP" Name="rs232_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="rs232_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="rs232_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="rs232_placed.dcp"/>
   <File Type="PLACE-IO" Name="rs232_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="rs232_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="rs232_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="rs232_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="rs232_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="rs232_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="rs232_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="rs232_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="rs232_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="rs232.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="rs232_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="rs232_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="rs232_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="rs232.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="rs232_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="rs232_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="rs232_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="rs232_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="rs232_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="rs232_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="rs232_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="rs232.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="rs232_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="rs232.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="rs232_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="rs232_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="rs232_power_routed.rpx"/>
@@ -46,20 +35,13 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="rs232_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="rs232_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="rs232_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="rs232_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="rs232_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="rs232_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="rs232_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="rs232_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="rs232_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="rs232_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="rs232_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="rs232_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="rs232_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="rs232_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="rs232_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="rs232.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="rs232_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="rs232.rbt"/>
   <File Type="BITSTR-NKY" Name="rs232.nky"/>
   <File Type="PDI-FILE" Name="rs232.pdi"/>
@@ -68,7 +50,6 @@
   <File Type="RNPI_FILE" Name="rs232.rnpi"/>
   <File Type="NPI_FILE" Name="rs232.npi"/>
   <File Type="RBD_FILE" Name="rs232.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="rs232.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="rs232.sysdef"/>
   <File Type="BG-BGN" Name="rs232.bgn"/>
@@ -127,5 +108,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>
